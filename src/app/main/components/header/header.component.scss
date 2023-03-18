@@ -1,0 +1,49 @@
+.header-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4rem;
+  width: 100%;
+  transition: all 100ms;
+  -webkit-transition: all 100ms;
+  -moz-transition: all 100ms;
+  -ms-transition: all 100ms;
+  -o-transition: all 100ms;
+  background-color: rgba(104, 116, 232, 1);
+
+  &.transparent {
+    background-color: rgba(104, 116, 232, 0.5);
+    backdrop-filter: blur(5px);
+  }
+
+  nav {
+    height: 100%;
+    ul {
+      margin: 0 0 0 5rem;
+      padding: 0;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      list-style: none;
+      color: #f9c7df;
+      font-family: Libre Franklin;
+      font-size: 19px;
+      font-weight: 500;
+
+      li {
+        cursor: pointer;
+        transition: all 100ms;
+        -webkit-transition: all 100ms;
+        -moz-transition: all 100ms;
+        -ms-transition: all 100ms;
+        -o-transition: all 100ms;
+
+        &:hover {
+          scale: 1.03;
+        }
+      }
+    }
+  }
+}
+
