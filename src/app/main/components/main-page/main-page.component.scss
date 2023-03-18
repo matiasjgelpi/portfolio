@@ -1,5 +1,43 @@
 .main-page-container {
-    background-color: #e8f0ff;
-    width: 100vw;
-    height: calc(100vh - 4rem);
+  background-color: #e8f0ff;
+  width: 100vw;
+  height: calc(100vh - 4rem);
+  font-family: Libre Franklin;
+  font-size: 2rem;
+
+  .main-page-main-section {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    
+    div:first-child {
+        align-items: start;
+    }
+    
+    div {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+        p:first-child {
+            font-family: Climate Crisis;
+            font-size: 50px;
+            margin-bottom: 0;
+        }
+
+        p:nth-child(2) {
+            margin-top: 0;
+            width: 100%;
+            text-align: start;
+            font-weight: 600;
+        }
+
+      p {
+        margin-left: 5rem;
+      }
+    }
+  }
 }
