@@ -9,10 +9,10 @@
   -moz-transition: all 100ms;
   -ms-transition: all 100ms;
   -o-transition: all 100ms;
-  background-color: rgba(104, 116, 232, 1);
+//   background-color: var(--header-background-color);
 
   &.transparent {
-    background-color: rgba(104, 116, 232, 0.5);
+    // background-color: var(--header-tranparent-background-color);
     backdrop-filter: blur(5px);
   }
 
@@ -26,7 +26,7 @@
       align-items: center;
       gap: 1rem;
       list-style: none;
-      color: #f9c7df;
+      color: #99f7ab;
       font-family: Libre Franklin;
       font-size: 19px;
       font-weight: 500;
@@ -42,6 +42,11 @@
         &:hover {
           scale: 1.03;
         }
+
+        &:active {
+            filter: contrast(200%);
+            -webkit-filter: contrast(200%);
+}
       }
     }
   }

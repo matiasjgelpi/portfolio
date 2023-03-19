@@ -1,4 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+import { DarkModeService } from 'src/services/dark-mode.service';
 
 @Component({
   selector: 'app-header',
@@ -19,11 +20,15 @@ export class HeaderComponent implements OnInit {
     }
   }
 
-  constructor() { }
+  constructor(private darkModeService : DarkModeService) { }
 
 
 
   ngOnInit(): void {
   }
 
+
+  public toggleTheme() {
+    this.darkModeService.toggleDarkMode()
+  }
 }

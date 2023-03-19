@@ -10,5 +10,60 @@ body {
   padding: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+// body {
+//   background-color: var(--background-color);
+//   color: var(--text-color);
+// }
 
+@import url("https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+// Definir variables para el modo claro
+$color-text: #333;
+$color-background: #fff;
+$header-background-color :rgba(104, 116, 232, 1);
+$header-tranparent-background-color:rgba(104, 116, 232, 0.7);
+
+
+// Definir variables para el modo oscuro
+$color-text-dark: #fff;
+$color-background-dark: #333;
+$header-background-color :rgba(104, 116, 232, 1);
+$header-tranparent-background-color:rgba(104, 116, 232, 0.7);
+
+// Utilizar las variables para establecer los estilos
+body {
+    background-color: $color-background;
+   
+
+    .header-container {
+
+        background-color: red;
+        color: $color-text;
+      
+        &.transparent {
+          background-color: $color-background;
+
+        }
+    }
+  }
+  
+  // Estilos para el modo oscuro
+  .dark-mode {
+    background-color: $color-background-dark;
+    color: $color-text-dark;
+    .header-container {
+
+          background-color: $header-background-color;
+        
+          &.transparent {
+            background-color: $header-tranparent-background-color;
+  
+          }
+      }
+  }
+
+  body.dark-mode {
+    @extend .dark-mode;
+
+   
+  }

@@ -1,0 +1,9 @@
+:root {
+    --background-color: rgb(51, 51, 51);
+    --text-color: #ffffff;
+    --header-background-color :rgba(51, 51, 51,1);
+    --header-tranparent-background-color:rgba(51, 51, 51,0.7);
+  }
+
+
+
